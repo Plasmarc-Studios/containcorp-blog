@@ -727,6 +727,10 @@ $link-color: var(--link-color);
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
   left: 15px;
+
+  @media screen and (max-width: 45rem) {
+    left: 1.6em;
+  }
   }
   
   /* Make all right containers behave like the left ones */
