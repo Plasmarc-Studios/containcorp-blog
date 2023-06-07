@@ -11,12 +11,17 @@ layout: default
     </button>
   </div>
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
-  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} -  
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %b %-d, %Y" }} -  
     {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>
+  {% if page.custom-title-image == null %}
   <div id="fftitle">
     <img id="FFlogo" src="./images/FF Logo.png"/>
     <div id="FFlogoNumber">{{page.number}}</div>
   </div>
+  {% endif %}
+  {% if page.custom-title-image %}
+  <img id="customLogo" src="{{ page.custom-title-image }}"/>
+  {% endif %}
   <h1 class="title">{{ page.title }}</h1>
   <span class="meta">
     {% for tag in page.tags %}

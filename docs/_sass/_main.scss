@@ -17,8 +17,29 @@ html {
 	src: url(../fonts/ROBOTRONICA.OTF);
   }
 
+
+iframe{ 
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+img{
+	transition: all 2.3s ease 0s;
+}
+img:hover {
+	border: 1px solid var(--light-text-color);
+	z-index: 100;
+	scale: 2;
+}
+table {
+	text-align: left;
+	border-collapse: collapse;
+  }
+
+
 #FFlogoNumber{
 	font-family: robotronica;
+	transition: all 2.3s ease 0s;
 }
 #fftitle{
 	display: flex;
@@ -32,6 +53,10 @@ html {
 }
 #fftitle > img {
 	transform: translateY(8px);
+	&:hover {
+		border: none;
+		scale: 1;
+	}
 
 	@media screen and (max-width: 900px) {
 		transform: translateY(3px);
@@ -43,6 +68,13 @@ html {
 
 	@media screen and (min-width: 900px) {
 		font-size: 90px;
+	}
+}
+
+#customLogo{
+	&:hover {
+		border: none;
+		scale: 1;
 	}
 }
 
@@ -82,6 +114,10 @@ html[data-theme="light"] {
 	background-color: rgb(255, 255, 255);
 
 	#FFlogo{
+		filter: invert(1);
+	}
+
+	#customLogo{
 		filter: invert(1);
 	}
 
@@ -150,6 +186,11 @@ html[data-theme="dark"] {
 	#FFlogo{
 		filter: invert(0);
 	}
+
+	#customLogo{
+		filter: invert(0);
+	}
+
 
 	#theme-toggle div {
 		position: relative;
