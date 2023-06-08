@@ -8,7 +8,7 @@ timezone:  Europe/London
 repo: https://github.com/Plasmarc-Studios/plasmarc-studios.github.io # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 comments-enabled: true # true to enable disqus comments, false to hide them
-
+discus-identifier: plasmarc # disqus shortname
 author:
   name: Plasmarc Studios
   bio: A small game studio making 
