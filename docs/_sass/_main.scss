@@ -14,7 +14,11 @@ html {
 
 @font-face {
 	font-family: robotronica;
-	src: url(../fonts/ROBOTRONICA.OTF);
+	src: url(../fonts/ROBOTRONICA.eot);
+	src: url(../fonts/ROBOTRONICA.woff) format("woff"), 
+	url(../fonts/ROBOTRONICA.ttf) format("truetype"),
+	url(../fonts/ROBOTRONICA.otf) format("opentype"),
+	url(../fonts/ROBOTRONICA.svg#filename) format("svg");
   }
 
 
