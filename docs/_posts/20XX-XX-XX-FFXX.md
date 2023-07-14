@@ -31,6 +31,8 @@ Multiple image example:
     </div>
 </div>
 
+Link example:
+[name](link)
 
 # Case Closed
 
