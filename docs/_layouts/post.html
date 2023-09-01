@@ -10,6 +10,11 @@ layout: default
       <div></div>
     </button>
   </div>
+  <iframe class="steamHandle" name="steamHandleWishlist" src="https://store.steampowered.com/widget/2483140/?t=Hello%20Blog%20reader!%20Since%20you're%20here%20already%20might%20as%20well%20pop%20a%20cheeky%20wishlist!%20Tell%20your%20friend's%20about%20it%20and%20spread%20the%20word.%20Helps%20us%20greatly.%20Thank%20you!" frameborder="0" width="646" height="190"></iframe>
+  
+  <iframe class="discHandle" name="discHandle"  src="https://discord.com/widget?id=741251193040404560&theme=dark" width="350" height="190" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %b %-d, %Y" }} -  
     {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>

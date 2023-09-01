@@ -22,10 +22,25 @@ html {
   }
 
 
-iframe{ 
+iframe:not(.steamHandle){ 
 	aspect-ratio: 16 / 9;
 	height: 100%;
 	width: 100%;
+}
+iframe:is(.steamHandle){ 
+	margin-top: 40px;
+	aspect-ratio: 17 / 5;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+iframe:is(.discHandle){ 
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 video{ 
 	aspect-ratio: 16 / 9;
@@ -50,6 +65,10 @@ table {
 #FFlogoNumber{
 	font-family: robotronica;
 	transition: all 2.3s ease 0s;
+
+	@media screen and (max-width: 900px) {
+		display: none;
+	}
 }
 #fftitle{
 	display: flex;
