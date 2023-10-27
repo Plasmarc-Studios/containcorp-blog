@@ -8,6 +8,12 @@ unrelated: true
 permalink: "/joinus"
 ---
 
+<div style="display:flex">
+    <div style="flex:1;padding-right:10px;">
+        <img src="./unrelated-media/joinus-post/hiring.png" width="100%"/>
+    </div>
+</div>
+
 Join Plasmarc Studios for an Exceptional Opportunity! We accept applicants from all backgrounds!
 
 **Company:** PLASMARC LTD \\
@@ -49,7 +55,7 @@ Plasmarc studios is a very small studio. Only two of us here. Our humble beginni
 > * Ready to start from zero, and build up our small community into a much larger one.
 > * Knowledge about social media marketing
 
-## Position 3: Composer
+## Position 4: Composer
 Are you a passionate composer with a knack for creating captivating and atmospheric music? Plasmarc Studios is seeking a Composer to craft the musical score for our game. Your music will be a vital component in setting the tone and atmosphere of our unique anomalies  filled universe. If you are enthusiastic about contributing your musical talents to an exciting project, we'd love to hear from you.
 
 > **Role Requirements**
@@ -58,17 +64,18 @@ Are you a passionate composer with a knack for creating captivating and atmosphe
 > * Ability to compose music that complements the themes of scientific horror and worldbuilding.
 > * Proficiency in collaborating with the development team to ensure your music enhances the player's experience.
 
-## General Requirements:
+# General Requirements:
 * Interest or Experience in playing Management Games like Rimworld, Dwarf Fortress, Prison Architect
 * Enthusiasm for gaming and a keen interest in the SCP universe or related genres.
 * Strong communication skills and the ability to work effectively in a team.
 * Self-motivation and a commitment to meeting deadlines.
 * Creativity, adaptability, and a proactive approach to challenges.
 
-### Note: This is a Revshare Opportunity
-Please be aware that these positions are unpaid, and compensation will be based on revenue sharing once the game is released. We welcome applicants who are passionate about our project and are excited to contribute their skills to create an exceptional gaming experience.
+> **Note: This is a Revshare Opportunity**
+> Please be aware that these positions are unpaid, and compensation will be based on revenue sharing once the game is released. We welcome applicants who are passionate about our project and are excited to contribute their skills to create an exceptional gaming experience.
 
-### Apply:
+
+# Apply:
 If you're ready to join our project, we invite you to be part of Plasmarc Studios. We welcome applicants from all backgrounds to join us on this one-of-a-kind project.
 
 To apply, please submit:
@@ -78,7 +85,14 @@ To apply, please submit:
 
 to <a href="mailto:plasmarcstudios@gmail.com">plasmarcstudios@gmail.com</a> We will send a confirmation email back. If you don't recieve correspondence within a day. Please email us again. Don't miss this opportunity to contribute to what will hopefully be an exceptional gaming experience.
 
-Application Deadline: 1st January 2024
+Application Deadline: **1st January 2024**
+
+Good luck!
+<div style="display:flex">
+    <div style="flex:1;padding-right:10px;">
+        <img src="./unrelated-media/joinus-post/thumbs-up.png" width="100%"/>
+    </div>
+</div>
 
 **Case Closed.**\
 **The Team**\
