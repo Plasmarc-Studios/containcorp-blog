@@ -18,7 +18,7 @@ layout: default
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %b %-d, %Y" }} -  
     {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>
-  {% if page.custom-title-image == null %}
+  {% if page.custom-title-image == null and page.unrelated == null %}
   <div id="fftitle">
     <img id="FFlogo" src="./images/FF Logo.png"/>
     <div id="FFlogoNumber">{{page.number}}</div>
