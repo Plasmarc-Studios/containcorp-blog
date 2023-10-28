@@ -31,8 +31,21 @@ Multiple image example:
     </div>
 </div>
 
+dropdown
+<details>
+<summary>2) Locate CoreMod in Mod Folder </summary>
+<div style="display:flex">
+     <div style="flex:1;padding-right:10px;">
+          <img src="./forensic-friday-media/ff50/2.png" width="100%"/>
+     </div>
+</div>
+</details>
+
+
 Link example:
 [name](link)
+
+[Forensic Friday 54](https://plasmarcstudios.co.uk//containcorp-blog/ff54){:target="_blank"}
 
 # Case Closed
 
