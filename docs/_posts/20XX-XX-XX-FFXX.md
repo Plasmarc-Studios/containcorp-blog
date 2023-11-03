@@ -47,6 +47,11 @@ Link example:
 
 [Forensic Friday 54](https://plasmarcstudios.co.uk//containcorp-blog/ff54){:target="_blank"}
 
+<video width="320" height="240" controls>
+<source src="./forensic-friday-media/ff14/hauling_1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 # Case Closed
 
 OUTRO
