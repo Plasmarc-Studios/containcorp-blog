@@ -10,7 +10,15 @@ permalink: "/ffXX"
 
 INTRO
 
+
+<img class="speakerimg" src="./unrelated-media/pfp-david.png" width="100%"/> 
+
 # SAMPLE TITLE
+
+<div class="speaker">
+    <div class="title">📣David</div>
+</div>
+
 Text
 
 Image example:

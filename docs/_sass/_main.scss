@@ -107,18 +107,33 @@ table {
 		scale: 1;
 	}
 }
-/*cool audio styling*/
-// audio {
-// 	width: 100%;
-// 	height: 50px;
-// 	margin: 30px 0px;
 
-// }
+.speakerimg{
+	border-radius: 50%;
+	width: 130px;
+	&:hover{
+		scale: 1;
+	}
+}
 
-// audio::-webkit-media-controls-panel {
-// 	background-color: var(--light-text-color);
-// 	color: var(--main-text-color);
-// }
+.speaker{
+	border: 1px solid var(--light-text-color);
+	z-index: 100;
+	border-radius: 15px;
+	padding-left: 10px;
+	background-color: var(--dark-text-color);
+	display: flex;
+
+	.title{
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: var(--light-text-color);
+	}
+}
+
+strong{
+	color: var(--link-color);
+}
 
 
 #theme-toggle {
