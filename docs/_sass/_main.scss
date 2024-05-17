@@ -781,8 +781,9 @@ $link-color: var(--link-color);
 	}
 
 	.desc {
+		color: white !important;
 		padding-top: 2em;
-	}
+		}
 
 	.left .desc {
 		text-align: right;
