@@ -2,56 +2,58 @@
 layout: default
 ---
 
+  <div class="whole-post">
+  <section class="post">
+    <div class="flex-row-between">
+      <a href="{{ site.url }}{{ site.baseurl }}/">« back</a>
+      <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+        <div></div>
+      </button>
+    </div>
+    
+    {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %b %-d, %Y" }} -  
+      {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>
+    {% if page.custom-title-image == null and page.unrelated == null %}
+    <div id="fftitle">
+      <img id="FFlogo" src="./images/FF Logo.png"/>
+      <div id="FFlogoNumber">{{page.number}}</div>
+    </div>
+    {% endif %}
+    {% if page.custom-title-image %}
+    <img id="customLogo" src="{{ page.custom-title-image }}"/>
+    {% endif %}
+    <h1 class="title">{{ page.title }}</h1>
+      {% for tag in page.tags %}
+      <a href="{{ site.url }}{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+      {{ content | toc}}
+  </section>
 
-<section class="post">
-  <div class="flex-row-between">
-	  <a href="{{ site.url }}{{ site.baseurl }}/">« back</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
-  </div>
+  <section>
+
+    <nav class="post-nav">
+      {% if page.previous %}
+      <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
+        <div class="nav-arrow">Previous</div>
+        <span class="post-title">{{ page.previous.title }}</span>
+      </a>
+      {% endif %} {% if page.next %}
+      <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
+        <div class="nav-arrow">Next</div>
+        <span class="post-title">{{ page.next.title }}</span>
+      </a>
+      {% endif %}
+
+    </nav>
+  </section>
+
   <iframe class="steamHandle" name="steamHandleWishlist" src="https://store.steampowered.com/widget/2483140/?t=Hello%20Blog%20reader!%20Since%20you're%20here%20already%20might%20as%20well%20pop%20a%20cheeky%20wishlist!%20Tell%20your%20friend's%20about%20it%20and%20spread%20the%20word.%20Helps%20us%20greatly.%20Thank%20you!" frameborder="0" width="646" height="190"></iframe>
-  
+    
   <iframe class="discHandle" name="discHandle"  src="https://discord.com/widget?id=741251193040404560&theme=dark" width="350" height="190" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 
-  {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
-  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %b %-d, %Y" }} -  
-    {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %} min read</time>
-  {% if page.custom-title-image == null and page.unrelated == null %}
-  <div id="fftitle">
-    <img id="FFlogo" src="./images/FF Logo.png"/>
-    <div id="FFlogoNumber">{{page.number}}</div>
-  </div>
+
+  {% if site.comments-enabled %}
+    {% include disqus.html %}
   {% endif %}
-  {% if page.custom-title-image %}
-  <img id="customLogo" src="{{ page.custom-title-image }}"/>
-  {% endif %}
-  <h1 class="title">{{ page.title }}</h1>
-  <span class="meta">
-    {% for tag in page.tags %}
-    <a href="{{ site.url }}{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-  {{ content }}
-</section>
-
-<section>
-
-  <nav class="post-nav">
-    {% if page.previous %}
-    <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
-      <div class="nav-arrow">Previous</div>
-      <span class="post-title">{{ page.previous.title }}</span>
-    </a>
-    {% endif %} {% if page.next %}
-    <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
-      <div class="nav-arrow">Next</div>
-      <span class="post-title">{{ page.next.title }}</span>
-    </a>
-    {% endif %}
-
-  </nav>
-</section>
-
-{% if site.comments-enabled %}
-  {% include disqus.html %}
-{% endif %}
+</div>

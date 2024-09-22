@@ -21,6 +21,51 @@ html {
 		url(../../containcorp-blog/fonts/ROBOTRONICA.otf) format("opentype"),
 		url(../../containcorp-blog/fonts/ROBOTRONICA.svg#filename) format("svg");
 }
+  
+#toc {
+	position: fixed;
+	left: 1vw;
+	max-width: 20vw;
+	overflow-y: scroll;
+
+	padding-left: 1.5vw;
+
+	ul {
+		list-style-type: circle;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	  
+	  /* For Firefox */
+	scrollbar-width: none; /* Hide scrollbar by default */
+	-ms-overflow-style: none; /* For IE and Edge */
+	
+	/* Hover State: Show the scrollbar */
+	&:hover::-webkit-scrollbar {
+		width: 8px; /* Set the width of the scrollbar on hover */
+		height: 8px; /* Set the height for horizontal scrollbar on hover */
+	}
+
+	@media (max-width: 850px) {
+		position: relative;
+		max-width: none;
+		height: auto;
+		margin-bottom: 7vh;
+		overflow: inherit;
+	}
+
+	@media (min-width: 851px) {
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	 	height: 80vh;
+
+	}
+	  
+}
+
 
 iframe:not(.steamHandle) {
 	aspect-ratio: 16 / 9;
@@ -54,7 +99,7 @@ img {
 img:hover {
 	border: 1px solid var(--light-text-color);
 	z-index: 100;
-	scale: 2;
+	scale: 1.1;
 }
 table {
 	text-align: left;
@@ -88,10 +133,8 @@ table {
 	flex-direction: row;
 	align-items: center;
 	gap: 20px;
-	@media screen and (max-width: 900px) {
-		flex-direction: column;
-		gap: 0px;
-	}
+	margin-left: -10vw;
+
 }
 #fftitle > img {
 	transform: translateY(8px);
@@ -110,8 +153,10 @@ table {
 	font-size: 11vw;
 
 	@media screen and (min-width: 900px) {
-		font-size: 90px;
+		font-size: 12vw;
 	}
+
+	scale: 0.7;
 }
 
 #customLogo {
@@ -131,7 +176,6 @@ table {
 
 .speaker {
 	border: 1px solid var(--light-text-color);
-	z-index: 100;
 	border-radius: 15px;
 	padding-left: 10px;
 	background-color: var(--dark-text-color);
@@ -326,10 +370,6 @@ a {
 	margin: 1rem 0;
 }
 
-.meta {
-	margin: 1.4rem 0;
-}
-
 code,
 pre {
 	background: var(--code-bg-color);
@@ -519,11 +559,32 @@ time {
 
 main {
 	display: flex;
-	max-width: 47rem;
-	margin: -5rem auto 0;
-	padding: 2.4rem 2rem;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
+
+.main-page {
+	margin: 0 10vw;
+	max-width: 60vw;
+
+	@media (max-width: 850px) {
+		margin: 0 25px;
+		max-width: 100%;
+	}
+
+}
+
+.whole-post{
+	max-width: 65vw;
+	margin-left: 26vw;
+	margin-right: auto;
+	@media (max-width: 850px) {
+		margin: 0 25px;
+		max-width: 100%;
+	}
+}
+
 
 .flex-row-between {
 	display: flex;
@@ -615,6 +676,7 @@ figcaption {
 		padding: 10px 10px 10px 35px;
 		color: var(--main-text-color);
 		-webkit-appearance: none;
+		appearance: none;
 		background-color: rgba(128, 128, 128, 0.1);
 		border: 1px solid rgba(128, 128, 128, 0.1);
 		&::-webkit-input-placeholder {
