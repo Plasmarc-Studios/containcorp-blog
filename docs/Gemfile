@@ -14,4 +14,3 @@ gem 'webrick'
 
 gem 'jekyll-seo-tag'
 
-gem 'jekyll-toc'

@@ -60,7 +60,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-seo-tag
-  - jekyll-toc
 
 collections:
   pages:

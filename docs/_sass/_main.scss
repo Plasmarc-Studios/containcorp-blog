@@ -24,15 +24,11 @@ html {
   
 #toc {
 	position: fixed;
-	left: 1vw;
+	
 	max-width: 20vw;
 	overflow-y: scroll;
 
 	padding-left: 1.5vw;
-
-	ul {
-		list-style-type: circle;
-	}
 
 	&::-webkit-scrollbar {
 		display: none;
@@ -61,7 +57,7 @@ html {
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
 	 	height: 80vh;
-
+		left: 1vw;
 	}
 	  
 }
@@ -153,7 +149,7 @@ table {
 	font-size: 11vw;
 
 	@media screen and (min-width: 900px) {
-		font-size: 12vw;
+		font-size: 14vw;
 	}
 
 	scale: 0.7;
