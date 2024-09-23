@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Job Opportunity at Plasmarc Studios"
-desc: "Join Plasmarc Studios for an Exceptional Opportunity! We accept applicants from all backgrounds!"
+description: "Join Plasmarc Studios for an Exceptional Opportunity! We accept applicants from all backgrounds!"
 date: 2023-10-27 00:00:00 +0100
 published: true
 unrelated: true

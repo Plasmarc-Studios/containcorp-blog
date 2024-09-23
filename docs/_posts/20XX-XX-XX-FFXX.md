@@ -2,7 +2,7 @@
 layout: post
 number: "XX"
 title: "Forensic Friday XX: "
-desc: ""
+description: ""
 date: 20XX-XX-XX 00:00:00 +0100
 published: false 
 permalink: "/ffXX"
