@@ -96,7 +96,3 @@ defaults:
 relative_links:
   enabled:     true
   collections: false
-
-sitemap:
-  exclude:
-    - /page/
