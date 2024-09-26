@@ -8,9 +8,14 @@ published: false
 permalink: "/ffXX"
 ---
 
-<img class="speakerimg" src="./unrelated-media/pfp-david.png" width="100%"/> 
+<img class="speakerimg" src="./unrelated-media/pfp-david.png" width="100%" alt="Picture of David"/> 
 <div class="speaker">
     <div class="title">📣David</div>
+</div>
+
+<img class="speakerimg" src="./unrelated-media/pfp-lydia.png" width="100%" alt="Picture of Dillan"/> 
+<div class="speaker">
+<div class="title">📣Dillan</div>
 </div>
 
 # Hey Readers!
@@ -25,7 +30,7 @@ Text
 Image example:
 <div style="display:flex">
     <div style="flex:1;padding-right:10px;">
-        <img src="./forensic-friday-media/ff43/comms.png" width="100%"/>
+        <img src="./forensic-friday-media/ff43/comms.png" width="100%" alt="Please put an alt for Accessibility (and SEO)!"/>
     </div>
 </div>
 
@@ -33,10 +38,10 @@ Multiple image example:
 
 <div style="display:flex">
     <div style="flex:1;padding-right:10px;">
-        <img src="./forensic-friday-media/ff43/wallold.png" width="100%"/>
+        <img src="./forensic-friday-media/ff43/wallold.png" width="100%" alt="Please put an alt for Accessibility (and SEO)!"/>
     </div>
      <div style="flex:1;padding-right:10px;">
-        <img src="./forensic-friday-media/ff43/wallnew.png" width="100%"/>
+        <img src="./forensic-friday-media/ff43/wallnew.png" width="100%" alt="Please put an alt for Accessibility (and SEO)!"/>
     </div>
 </div>
 
