@@ -7,13 +7,16 @@ window.onload = function(){
     // - Hover over sliders to see preview of timestamp/volume change
 
     const audioPlayer = document.querySelector(".audio-player");
+
+    if (audioPlayer === null) {
+        return;
+    }
+
     const vinyl = document.querySelector(".vinyl");
     const audio = new Audio(
         audioPlayer.getAttribute("data-src")
     );
     //credit for song: Adrian kreativaweb@gmail.com
-
-    console.dir(audio);
 
     audio.addEventListener(
     "loadeddata",
