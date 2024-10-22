@@ -5,16 +5,18 @@ layout: default
 <div class="main-page">
     <section id="intro">
         <div class="flex-row-between">
-            <h1>{{ site.greetings }}</h1>
+            <div>
+                <h1>{{ site.greetings }}</h1>
+                <h2>{{ site.greetingsTagline }}</h2>
+            </div>
+            
             <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
                 <div></div>
             </button>
         </div>
         <div class="bio">
-            {{ site.description }}
-            <p>
+            <p>{{ site.description }}</p>
             <a href="{{ site.url }}{{ site.baseurl }}/roadmap/#current">> Roadmap</a>
-            </p>
         </div>
 
 
