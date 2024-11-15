@@ -1,11 +1,11 @@
 ---
 layout: post
-number: "XX"
-title: "Forensic Friday XX: "
-description: ""
-date: 20XX-XX-XX 00:00:00 +0100
-published: false 
-permalink: "/ffXX"
+number: 'XX'
+title: 'Forensic Friday XX: '
+description: ''
+date: 20XX-XX-XX 00:00:00 +0000
+published: false
+permalink: '/ffXX'
 ---
 
 <img class="speakerimg" src="./unrelated-media/pfp-david-2.jpg" width="100%" alt="Picture of David"/> 
@@ -22,12 +22,12 @@ permalink: "/ffXX"
 
 INTRO
 
-
 # SAMPLE TITLE
 
 Text
 
 Image example:
+
 <div style="display:flex">
     <div style="flex:1;padding-right:10px;">
         <img src="./forensic-friday-media/ff43/comms.png" width="100%" alt="Please put an alt for Accessibility (and SEO)!"/>
@@ -46,6 +46,7 @@ Multiple image example:
 </div>
 
 dropdown
+
 <details>
 <summary>2) Locate CoreMod in Mod Folder </summary>
 <div style="display:flex">
@@ -55,11 +56,10 @@ dropdown
 </div>
 </details>
 
-
 Link example:
 [name](link)
 
-[Forensic Friday 54](https://plasmarcstudios.co.uk/containcorp-blog/ff54){:target="_blank"}
+[Forensic Friday 54](https://plasmarcstudios.co.uk/containcorp-blog/ff54){:target="\_blank"}
 
 <video width="320" height="240" controls>
 <source src="./forensic-friday-media/ff14/hauling_1.mp4" type="video/mp4">
