@@ -67,23 +67,23 @@ collections:
 
 defaults:
     - scope:
-        	path: ''
+          path: ''
       values:
-        	layout: 'default'
+          layout: 'default'
     - scope:
-          	path: ''
-          	type: 'pages'
+          path: ''
+          type: 'pages'
       values:
-          	layout: 'page'
+          layout: 'page'
     - scope:
-          	path: ''
-          	type: 'posts'
+          path: ''
+          type: 'posts'
       values:
-          	layout: 'post'
+          layout: 'post'
     - scope:
-          	path: ''
+          path: ''
       values:
-          	toc: true
+          toc: true
 
 relative_links:
     enabled: true
