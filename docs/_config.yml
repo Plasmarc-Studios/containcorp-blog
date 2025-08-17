@@ -2,7 +2,7 @@ site: Plasmarc Studios
 title: Containcorp Blog
 greetings: Hello there! 👋 <br /> Welcome to Forensic Friday
 greetingsTagline: The greatest game dev blog on the internet (for Containcorp news!)
-description: The latest news and updates about Containcorp, an SCP-inspired, story generator and simulation game
+description: The latest news and updates about Containcorp, an absurd Corporate Horror & Logistical Management Sim where you milk anomalies for ludicrous profit.
 lang: en-GB
 timezone: Europe/London
 repo: https://github.com/Plasmarc-Studios/plasmarc-studios.github.io # site repo [optional]
